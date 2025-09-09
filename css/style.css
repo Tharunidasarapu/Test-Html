@@ -1,0 +1,137 @@
+.main-header
+{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-header.logo
+{
+    width: 55px;
+    height: 55px;
+    padding: 8px 14px;
+    margin: 10px 0;
+}
+.main-header.logo img
+{
+    border-radius: 5px;
+}
+.main-header.title h1
+{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-style: italic;
+
+}
+.bgimage
+{
+    background-image:url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    display:flex;
+    border:2px solid black;
+}
+#box
+{
+    width:250px;
+    height:250px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 8em;
+    transition: width 2s;
+}
+#box1
+{
+    background-color: aqua;
+    transition-timing-function: linear;
+}
+#box2
+{
+    background-color: blue;
+    transition-timing-function: ease-out;
+}
+#box3
+{
+    background-color: rgb(226, 43, 147);
+    transition-timing-function: ease-in-out;
+}
+#box4
+{
+    background-color: rgb(121, 141, 122);
+
+    transition-timing-function: ease-in;
+}
+#box4:hover
+{
+    background-color: rgb(217, 226, 43);
+    width:500px
+}
+div:hover
+{
+    width:500px;
+}
+.newrotate
+{
+    width:250px;
+    height:250px;
+    border-radius:15px;
+    background-color: brown;
+    transition:width2s,height.2s,transform3s
+}
+#newrotate:hover
+{
+    width:250px;
+    height:2cqh;
+    transform:rotate(180deg)
+}
+@keyframes animi
+{
+ from{background-color: blue;}
+ to{background-color: blueviolet;}
+}
+.animi
+{
+    width:160px;
+    height:160px;
+    animation-name:animid;
+    animation-duration:2s;
+}
+.scrolltext
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    width:100%;
+    white-space:nowrap ;
+    color:goldenrod;
+    overflow:hidden;
+    box-sizing: border-box;
+    border:2px solid red;
+}
+@keyframes scrollright {
+    from{transform: translateX(-100%);}
+ to{transform: translateX(100%);}
+    
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-right:100%;
+    animation: scrollright 10s linear infinite;
+}
+
+
+
+
+
+
+
